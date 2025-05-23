@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: bookstack
+    env: docker
+    repo: https://github.com/umbassa-long/docker-bookstack
+    branch: development
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: APP_KEY
+        value: base64:Jt3mZB3Ycc4X+zCwAfv1Xo7Z4Lf+3C2e5VNWvq7L1+E=  # <- Ersetze durch deinen echten APP_KEY
+    startCommand: /init
+    autoDeploy: true
+    disk:
+      name: bookstack-config
+      mountPath: /config
+      sizeGB: 1

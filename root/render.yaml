@@ -8,7 +8,7 @@ services:
     plan: free
     envVars:
       - key: APP_KEY
-        value: base64:Jt3mZB3Ycc4X+zCwAfv1Xo7Z4Lf+3C2e5VNWvq7L1+E=  # <- Ersetze durch deinen echten APP_KEY
+        value: base64:cjY3cWIzeWNvejN5b2RhejNhaTlrcXQ3dXFtNjNrdmY=  # <- Ersetze durch deinen echten APP_KEY
     startCommand: /init
     autoDeploy: true
     disk:
